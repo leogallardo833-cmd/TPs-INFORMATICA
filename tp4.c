@@ -1,1 +1,43 @@
+//https://github.com/leogallardo833-cmd/TPs-INFORMATICA/edit/main/tp4.c
+#include <stdio.h>
 
+int main()
+{
+    float peso, altura, imc;
+
+    printf("Ingrese el peso en kg: ");
+    scanf("%f", &peso);
+
+    printf("Ingrese la altura en metros: ");
+    scanf("%f", &altura);
+
+    imc = peso / (altura * altura);
+
+    printf("\nSu indice de masa corporal es: %.2f\n\n", imc);
+
+    printf("Indice\t\tCondicion\n");
+    printf("-----------------------------\n");
+    printf("<18.5\t\tBajo peso\n");
+    printf("18.5 a 24.9\tNormal\n");
+    printf("25.0 a 29.9\tSobrepeso\n");
+    printf(">=30\t\tObesidad\n");
+
+    if (imc < 18.5)
+    {
+        printf("\nSu condicion es: Bajo peso\n");
+    }
+    else if (imc < 25.0)
+    {
+        printf("\nSu condicion es: Normal\n");
+    }
+    else if (imc < 30.0)
+    {
+        printf("\nSu condicion es: Sobrepeso\n");
+    }
+    else
+    {
+        printf("\nSu condicion es: Obesidad\n");
+    }
+
+    return 0;
+}
