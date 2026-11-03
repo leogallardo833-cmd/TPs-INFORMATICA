@@ -1,4 +1,4 @@
-// URL del repositorio: 
+// URL del repositorio: https://github.com/leogallardo833-cmd/TPs-INFORMATICA/blob/main/tp8.c
 
 #include <stdio.h>
 #include <stdlib.h>
